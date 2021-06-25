@@ -1,0 +1,117 @@
+.page {
+  border: 1px solid black;
+  font-family: sans-serif;
+  border-radius: 10px;
+  margin: 1%;
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 100% 100% 100%;
+  grid-template-areas:
+    "arena player arena"
+    "btnCard btnCard btnCard";
+}
+.top-section {
+  height: 400px;
+  position: relative;
+}
+.arena {
+  position: absolute;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border: 1px solid black;
+  grid-area: arena;
+}
+.arenaBtn {
+  height: 100%;
+}
+.arenaBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header {
+  text-align: center;
+}
+.callback {
+  text-align: center;
+}
+.btnCard {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  grid-area: btnCard;
+}
+/* .btnss {
+
+} */
+.playerHealtBar {
+  position: absolute;
+  left: 1%;
+  top: 2%;
+  z-index: 1;
+  background-color: red;
+  height: 10px;
+  width: 50%;
+  border-right: 1px solid black;
+}
+.computerHealtBar {
+  position: absolute;
+  right: 1%;
+  top: 2%;
+  z-index: 1;
+  background-color: red;
+  height: 10px;
+  width: 50%;
+  border-left: 1px solid black;
+}
+
+.player {
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  grid-area: player;
+  left: 10%;
+  bottom: 4%;
+}
+.shot {
+  height: 10%;
+  position: absolute;
+  z-index: 3;
+  grid-area: player;
+  left: 11%;
+  bottom: 30%;
+}
+.cshot {
+  height: 10%;
+  position: absolute;
+  z-index: 3;
+  grid-area: player;
+  right: 11%;
+  bottom: 30%;
+}
+.computer {
+  height: 200px;
+  position: absolute;
+  z-index: 2;
+  grid-area: player;
+  right: 10%;
+  bottom: 4%;
+}
+button {
+  border-radius: 10px;
+  height: 80px;
+  width: 400px;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
